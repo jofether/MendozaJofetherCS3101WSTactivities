@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #dfe8d8 0%, #f0f4e3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.vision-board {
+    width: 80%;
+    text-align: center;
+    background-color: #f7f7f2;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #556b2f;
+    font-size: 32px;
+}
+
+.reminder-title {
+    font-size: 20px;
+}
+
+.reminder-message {
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin-top: 5px;
+}
+
+.reminder {
+    background-color: #a3b59f;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #3e5c35;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.image-grid div {
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid div img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: start;
+}
+
+.goals {
+    background-color: #c5d1c0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: left;
+    color: #3e5c35;
+    max-width: 300px;
+}
+
+.goals ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.goals li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.goals li i {
+    margin-right: 10px;
+    color: #3e5c35;
+}
+
+.large-image {
+    background-color: #a3b59f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.large-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+}
