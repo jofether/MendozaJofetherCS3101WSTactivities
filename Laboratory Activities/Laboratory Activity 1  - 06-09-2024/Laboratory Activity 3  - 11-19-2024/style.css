@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #8e44ad, #3498db, #2ecc71);
+    background-size: 200% 200%;
+    animation: gradientBG 8s ease infinite;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffdd99;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+textarea {
+    width: 100%;
+    max-width: 540px;
+    height: 180px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ffdd99, inset 0 0 10px #3498db;
+    transform: scale(1.02);
+}
+
+#wordcount, #sentenceCount {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#wordcount:hover, #sentenceCount:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+}
